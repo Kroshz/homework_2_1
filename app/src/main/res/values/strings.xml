@@ -4,4 +4,8 @@
     <string name="string_mail">Электронная почта</string>
     <string name="b_ok">ОК</string>
     <string name="b_clear">Очистить</string>
+    <string name="nameError">Введите имя пользователя</string>
+    <string name="mailError">Введите почтовый адрес</string>
+    <string name="sub1">\Подписка на рассылку успешно оформлена для пользователя \</string>
+    <string name="sub2">\ на электронный адрес \</string>
 </resources>

@@ -28,8 +28,14 @@ public class MainActivity extends AppCompatActivity {
         b_ok.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                tv_subscribe.setText("Подписка на рассылку успешно оформлена для пользователя " +
-                                     et_name.getText() + " на электронный адрес " + et_mail.getText());
+                if (et_name.length() == 0) {
+                    tv_subscribe.setText(R.string.nameError);
+                } else if (et_mail.length() == 0) {
+                    tv_subscribe.setText(R.string.mailError);
+                } else {
+                    tv_subscribe.setText(getString(R.string.sub1) +
+                    et_name.getText() + getString(R.string.sub2) + et_mail.getText());
+                }
             }
         });
 
